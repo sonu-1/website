@@ -1,0 +1,252 @@
+:root{
+  --text-color:#EB8F52;
+  --bg-color:#161e35;
+} 
+body {
+  background: #161e35 !important;
+  color: #fff; }
+
+.navbar {
+  border-bottom: #EB8F52 3px solid;
+ }
+  a>img{
+    width:65px;
+    
+  }
+  
+  .marquee1{
+    color:orange;
+    font-weight:bold
+  }
+  .marquee2{
+    color:orange;
+    font-weight:bold;
+    visibility: hidden;
+  }
+ 
+.book{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+}
+  .click { 
+    
+    background: #000;
+    border-radius:20px;
+    border:3px solid  #EB8F52;
+    margin-left:20px;
+    width :150px;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: Click; 
+    
+    
+  }
+  .click a{
+    background: #000;
+    color:#EB8F52;
+    margin-left: 0px;
+
+    
+    
+    
+  }
+.card{
+  background: var(--bg-color);
+  height:300px;
+}
+.card-img{
+height:300px;
+width:300px;
+padding:20px;
+margin:0 auto;
+}
+  .card-img-overlay{
+    border: 5px solid var(--text-color);
+    margin-bottom: 10px;
+  }
+  .card-text{
+    color:#ece61e;
+    font-weight:bold; 
+  }
+  /* h3{
+    animation: h3 1s infinite;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: ghat; 
+  } */
+
+ .card-header{
+   /* background:var(--text-color) !important; */
+
+   height:60px;
+  margin: 0 !important;
+   
+ }
+ .card-tilte{
+   font-size: 18px;
+ }
+ .card-tilte a{
+  transition: .5s;
+  
+ } 
+ .card-tilte a:hover{
+transform: rotateZ(360deg) !important;
+text-decoration:none !important;
+ }
+
+
+
+footer{
+  height:130px;
+  background:#000;
+  text-align:center;
+  color:lightblue;
+margin-top: 50px;
+}
+footer h4{
+  margin-top: 50px;
+}
+
+
+
+  .ghatBlink2 {
+    /* animation: blink2 1s infinite; */
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: ghat; 
+    
+  }
+  
+  .ghatBlink1  {
+    /* animation: blink1 1s infinite; */
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: ghat; 
+  }
+  .click a {
+    /* animation: blink1 1s infinite; */
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-name: Click; 
+   
+  }
+  @keyframes ghat {
+      
+    
+  0% {
+      color: #E82616;
+  }
+  25% {
+      color: #85E816;
+  }
+  50% {
+      color: #E82616;
+  }
+  100% {
+      color: #E81672;
+
+  }
+}
+ /* @keyframes h3{
+  0% {
+    color: #E82616;
+}
+25% {
+    color: #85E816;
+}
+50% {
+    color: #E82616;
+}
+100% {
+    color: #E81672;
+}
+} */
+@keyframes Click{
+  0% {
+    color: #E82616;
+}
+25% {
+    color: #85E816;
+}
+50% {
+    color: #E82616;
+}
+100% {
+    color: #E81672;
+}
+}
+
+
+@media(max-width:576px){
+  .marquee1{
+    display: none;
+  }
+  .marquee2{
+    visibility: visible;
+  }
+  
+  .card{
+    height:200px;
+  }
+  .card-text{
+    font-size: 11px;;
+  }
+  .card-img{
+    height:200px;
+    width:200px;
+  }
+  .book{
+    transform:translateX(20%);
+    color:#ece61e;
+    font-size: 12px;
+    font-weight:bold;
+
+  }
+  .click-here{
+    margin-top: 40px;
+    
+    transform:translateX(-100%)
+  }
+}
+@media(max-width:320px){
+div.book{
+  font-size:12px;
+  
+}
+
+.click { 
+  text-align: center;  
+    width :100px;
+  transform: translateX(-30%);}
+
+}
+footer{
+ font-size:12px 
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Qserve</title>
+    
+
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="contact.css">
+</head>
+
+<body id="home">
+
+      <header>
+            <marquee behavior="" direction="" class="marquee1"> You are in <strong
+                        class="ghatBlink1">Ghatshila!!</strong> Welcome to Qserve for Quality and
+                  Quick service
+            </marquee>
+            <nav class="navbar navbar-expand-sm navbar-light   " style="background-color:#000000;opacity: 10px;">
+                  <div class="container">
+
+                        <a href="index.html" class="navbar-brand font-weight-bold text-uppercase text-white"><img
+                                    src="images/logo2.png" alt="Error" width:65px;></a>
+
+                        <button class="navbar-toggler" data-toggle='collapse' data-target="#navbarNav"><span
+                                    class="navbar-toggler-icon " style="background-color: #EB8F52;"></span></button>
+                        <div class="navbar-collapse collapse" id="navbarNav">
+                              <ul class="navbar-nav ml-lg-auto ">
+                                    <li class="nav-item"><a href="index.html"
+                                                class="nav-link text-uppercase  font-weight-bold"
+                                                style="color:#EB8F52 !important">home</a></li>
+                                    <li class="nav-item"><a href="about.html"
+                                                class="nav-link text-uppercase text-white font-weight-bold"
+                                                style="color:#EB8F52 !important">about</a></li>
+
+                                    <li class="nav-item dropdown"><a href="#"
+                                                class="nav-link dropdown-toggle text-uppercase text-white font-weight-bold"
+                                                data-toggle="dropdown" style="color:#EB8F52 !important">Services</a>
+                                          <div class="dropdown-menu " style="background-color: #000;">
+                                                <a href="#" class="dropdown-item  my-1 font-weight-bold"
+                                                      style="color: #EB8F52;">Elecronics</a>
+                                                <a href="#" class="dropdown-item  my-1 font-weight-bold"
+                                                      style="color: #EB8F52;">Electrical</a>
+                                                <a href="#" class="dropdown-item  my-1 font-weight-bold"
+                                                      style="color: #EB8F52;">Construction </a>
+                                                <a href="#" class="dropdown-item  my-1 font-weight-bold"
+                                                      style="color: #EB8F52;">Travel</a>
+                                                      <a href="#" class="dropdown-item  my-1 font-weight-bold" style="color: var(--text-color) ;">Plumbing</a>
+                                                <a href="#" class="dropdown-item       font-weight-bold"
+                                                      style="color: #EB8F52;">Event Management</a>
+                                          </div>
+                                    </li>
+
+                                    <li class="nav-item"><a href="#"
+                                                class="nav-link text-uppercase text-white font-weight-bold"
+                                                style="color:#EB8F52 !important">Blog</a></li>
+                                    <li class="nav-item"><a href="#"
+                                                class="nav-link text-uppercase text-white font-weight-bold"
+                                                style="color:#172c66 !important"> contact us</a></li>
+                              </ul>
+                        </div>
+                  </div>
+
+
+            </nav>
+      </header>
+
+      <div>
+            <marquee behavior="" direction="" class="marquee2"> You are in <strong
+                        class="ghatBlink2">Ghatshila!!</strong> Welcome to Qserve for Quality and</marquee>
+      </div>
+
+      <form action="dataBase.php" method="post">
+            <div class="container">
+                  <div class="form-group">
+                        <label for="userName">Customer Name</label>
+                        <input type="text" name="name" class="form-control form-control-sm w-75 " placeholder="Enter Your Name"
+                              required >
+                  </div>
+
+                  <div class="form-group">
+                        <label for="contactNum">Contact Number</label>
+                        <input type="text" name="cont_num" class="form-control form-control-sm w-75 " placeholder="Phone Number"
+                              required>
+                  </div>
+                  <div class="form-group">
+                        <label for="name">Work</label><br>
+
+                        <select id="servives-select"name="catagory" class="form-control-sm w-75 ">
+                              <option value="">Please choose an option</option>
+                              <option value="Electrical" >Electrical</option>
+                              <option value="Electronics">Electronics</option>
+                              <option value="Construction" >Construction</option>
+                              <option value="Plumbing" >Plumbing</option>
+                              <option value="Mechanics" >Mechanics</option>
+                              <option value="Travel" >Travel</option>
+                              <option value="Event_Management">Event Management</option>
+
+
+                        </select>
+                  </div>
+                  <div class="form-group">
+                        <label>Address</label><br>
+                        <input name="addr" class="address"></textarea>
+                  </div>
+                  
+                  <div class="form-group">
+                        <button type="submit" >Submit</button>
+                  </div>
+
+            </div>
+      </form>
+
+
+      <footer>
+            <h6>For more information </h6>
+            <p> Please contact the  number given below </p>
+            <p>+91-99052 24960</p><p>+91-95700 42255</p>
+      </footer>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
